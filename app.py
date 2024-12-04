@@ -12,7 +12,7 @@ from streamlit_pdf_viewer import pdf_viewer
 #these are main classes your image is trained on
 #you can define the classes in alphabectical order
 PREDICTED_LABELS = ["A","Aa","E","U","YE","O","Ka","Kha","Ga","Gha","Cha","CHa","Ja","Jha","Ini","Ta","Da","DA","ANa","Tha","THA","Dha","DHa","Na","Pa","Pha","Ba","Bha","Ma","Ya","Ra","La","Va","She","Sha","Sa","Ha"]  # Edit 1
-#PREDICTED_LABELS.sort()
+PREDICTED_LABELS.sort()
 
 def get_prediction(image_data):
   #replace your image classification ai service URL
