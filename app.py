@@ -16,7 +16,7 @@ PREDICTED_LABELS.sort()
 
 def get_prediction(image_data):
   #replace your image classification ai service URL
-  url = 'https://askai.aiclub.world/e4d2f85a-b36a-4302-acfa-5125be027f4f'  #Edit 2-- get endpoint URL from navigator by deploying your onnx model
+  url = 'https://askai.aiclub.world/7b525c8c-d4d8-4622-b792-a17ec541376b'  #Edit 2-- get endpoint URL from navigator by deploying your onnx model
   r = requests.post(url, data=image_data)
   response = r.json()['predicted_label']
   score = r.json()['score']
